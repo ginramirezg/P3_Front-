@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.mainFlex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.inputStyle {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttonStyleA, .buttonStyleB {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #6aa6de;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonStyleA:hover, .buttonStyleB:hover {
+  background-color: #69a3e1;
+}
+
+.gridStyle1 { grid-template-columns: repeat(1, 1fr); }
+.gridStyle2 { grid-template-columns: repeat(2, 1fr); }
+.gridStyle3 { grid-template-columns: repeat(3, 1fr); }
+.gridStyle4 { grid-template-columns: repeat(4, 1fr); }
+.gridStyle5 { grid-template-columns: repeat(5, 1fr); }
+
+.gridStyle1, .gridStyle2, .gridStyle3, .gridStyle4, .gridStyle5 {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;  /* Centrar elementos en el eje horizontal */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;  /* Evitar que la grilla se extienda demasiado */
+  margin: 0 auto;  /* Asegurar el centrado */
+  grid-auto-rows: auto;
+  grid-template-rows: auto;
+}
+
+.pelicula {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pelicula img {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.pelicula h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+  text-align: center;
+}
+
+.pBar {
+  display: none;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.buttonStyleB {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
